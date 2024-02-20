@@ -1,22 +1,3 @@
-
-// for(var i =0;i<4;i++){
-//     var ele = document.createElement("div");
-//     ele.innerHTML = "<p>asdasd</p>";
-//     ele.className ="main"
-//     ele.id = "main1"
-//     document.body.append(ele);
-// }
-
-// var container = document.createElement("div")
-// container.className="container"
-// var row = document.createElement("div")
-// row.className="row"
-// var col=document.createElement("div")
-// col.className = "col"
-// col.innerHTML="This is column"
-// container.append(row)
-// row.append(col)
-// document.body.append(container)
 function info(){
     var firstname = document.getElementById("firstname").value
     var middlename = document.getElementById("middlename").value
@@ -47,4 +28,4 @@ var emaillabel = document.createElement("label")
 emaillabel.innerHTML = "Email"
 
 var br = document.createElement("br")
-document.body.append(firstnamelabel,firstname,middlenamelabel,middlename,lastnamelable,lastname,emaillabel,email)
+document.body.append(firstnamelabel,firstname,br,middlenamelabel,middlename,br,lastnamelable,lastname,emaillabel,email)
