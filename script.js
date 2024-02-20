@@ -15,17 +15,25 @@ firstnamelabel.innerHTML = "Firstname"
 var middlename = document.createElement("input")
 middlename.id = "middlename"
 var middlenamelabel =document.createElement("label")
+middlenamelabel.setAttribute("for","middlename")
 middlenamelabel.innerHTML="MiddleName"
 
 var lastname = document.createElement("input")
 lastname.id = "lastname"
 var lastnamelable = document.createElement("label")
+lastnamelable.setAttribute("for","lastname")
 lastnamelable.innerHTML = "LastName"
 
 var email = document.createElement("input")
 email.id = "email"
 var emaillabel = document.createElement("label")
+emaillabel.setAttribute("for","email")
 emaillabel.innerHTML = "Email"
 
-var br = document.createElement("br")
-document.body.append(firstnamelabel,firstname,br,middlenamelabel,middlename,br,lastnamelable,lastname,emaillabel,email)
+var br1 = document.createElement("br")
+var br2 = document.createElement("br")
+var br3 = document.createElement("br")
+var br4 = document.createElement("br")
+var br5 = document.createElement("br")
+
+document.body.append(firstnamelabel,firstname,br1,middlenamelabel,middlename,br2,lastnamelable,lastname,br3,emaillabel,email,br4)
