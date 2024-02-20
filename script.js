@@ -1,3 +1,22 @@
+
+// for(var i =0;i<4;i++){
+//     var ele = document.createElement("div");
+//     ele.innerHTML = "<p>asdasd</p>";
+//     ele.className ="main"
+//     ele.id = "main1"
+//     document.body.append(ele);
+// }
+
+// var container = document.createElement("div")
+// container.className="container"
+// var row = document.createElement("div")
+// row.className="row"
+// var col=document.createElement("div")
+// col.className = "col"
+// col.innerHTML="This is column"
+// container.append(row)
+// row.append(col)
+// document.body.append(container)
 function info(){
     var firstname = document.getElementById("firstname").value
     var middlename = document.getElementById("middlename").value
@@ -30,10 +49,13 @@ var emaillabel = document.createElement("label")
 emaillabel.setAttribute("for","email")
 emaillabel.innerHTML = "Email"
 
+var button = document.createElement("button")
+button.setAttribute("type","button")
+button.setAttribute("onclick","info()")
+button.innerHTML = "Click"
 var br1 = document.createElement("br")
 var br2 = document.createElement("br")
 var br3 = document.createElement("br")
 var br4 = document.createElement("br")
-var br5 = document.createElement("br")
 
-document.body.append(firstnamelabel,firstname,br1,middlenamelabel,middlename,br2,lastnamelable,lastname,br3,emaillabel,email,br4)
+document.body.append(firstnamelabel,firstname,br1,middlenamelabel,middlename,br2,lastnamelable,lastname,br3,emaillabel,email,br4,button)
