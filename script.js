@@ -1,22 +1,3 @@
-
-// for(var i =0;i<4;i++){
-//     var ele = document.createElement("div");
-//     ele.innerHTML = "<p>asdasd</p>";
-//     ele.className ="main"
-//     ele.id = "main1"
-//     document.body.append(ele);
-// }
-
-// var container = document.createElement("div")
-// container.className="container"
-// var row = document.createElement("div")
-// row.className="row"
-// var col=document.createElement("div")
-// col.className = "col"
-// col.innerHTML="This is column"
-// container.append(row)
-// row.append(col)
-// document.body.append(container)
 function info(){
     var firstname = document.getElementById("firstname").value
     var middlename = document.getElementById("middlename").value
@@ -25,37 +6,55 @@ function info(){
 
     console.log(`FirstName:${firstname},MiddleName:${middlename},LastName:${lastname},Email:${email}`)
 }
-var firstname = document.createElement("input")
-firstname.id = "firstname"
-var firstnamelabel = document.createElement("label")
-firstnamelabel.setAttribute("for","firstname")
-firstnamelabel.innerHTML = "Firstname"
+function labelcreate(tagname,attrname,attrvalue,content){
+var ele = document.createElement(tagname);
+ele.setAttribute(attrname,attrvalue);
+ele.innerHTML=content;
+return ele;
+}
 
-var middlename = document.createElement("input")
-middlename.id = "middlename"
-var middlenamelabel =document.createElement("label")
-middlenamelabel.setAttribute("for","middlename")
-middlenamelabel.innerHTML="MiddleName"
+function input_create(tagname,att1name,attr1value,attr2name,attr2value){
+    var element = document.createElement(tagname);
+    element.setAttribute(att1name,attr1value)
+    element.setAttribute(attr2name,attr2value);
+    return element
+}
 
-var lastname = document.createElement("input")
-lastname.id = "lastname"
-var lastnamelable = document.createElement("label")
-lastnamelable.setAttribute("for","lastname")
-lastnamelable.innerHTML = "LastName"
+function break_create(){
+    var break_ele = document.createElement("br");
+    return break_ele;
+}
 
-var email = document.createElement("input")
-email.id = "email"
-var emaillabel = document.createElement("label")
-emaillabel.setAttribute("for","email")
-emaillabel.innerHTML = "Email"
+var firstname_label = labelcreate("label","for","firstname","Firstname");
+var firstname_break = break_create();
+var firstname_input = input_create("input","type","text","id","firstname")
+
+
+var middlename_label = labelcreate("label","for","middlename","Middlename");
+var middlename_break = break_create();
+var middlename_input = input_create("input","type","text","id","middlename")
+
+var lastname_label = labelcreate("label","for","lastname","Lastname");
+var lastname_break = break_create();
+var lastname_input = input_create("input","type","text","id","lastname")
+
+var email_label = labelcreate("label","for","email","Email");
+var email_break = break_create();
+var email_input = input_create("input","type","email","id","email")
+
+var password_label = labelcreate("label","for","password","Password");
+var password_break = break_create();
+var password_input = input_create("input","type","password","id","password")
+
+var br1 = document.createElement("br")
+var br2 = document.createElement("br")
+var br3 = document.createElement("br")
+var br4 = document.createElement("br")
+var br5 = document.createElement("br")
 
 var button = document.createElement("button")
 button.setAttribute("type","button")
 button.setAttribute("onclick","info()")
 button.innerHTML = "Click"
-var br1 = document.createElement("br")
-var br2 = document.createElement("br")
-var br3 = document.createElement("br")
-var br4 = document.createElement("br")
 
-document.body.append(firstnamelabel,firstname,br1,middlenamelabel,middlename,br2,lastnamelable,lastname,br3,emaillabel,email,br4,button)
+document.body.append(firstname_label,firstname_break,firstname_input,br1,middlename_label,middlename_break,middlename_input,br2,lastname_label,lastname_break,lastname_input,br3,email_label,email_break,email_input,br4,password_label,password_break,password_input,br5,button);
