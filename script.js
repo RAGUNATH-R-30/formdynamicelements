@@ -46,11 +46,11 @@ var password_label = labelcreate("label","for","password","Password");
 var password_break = break_create();
 var password_input = input_create("input","type","password","id","password")
 
-var br1 = document.createElement("br")
-var br2 = document.createElement("br")
-var br3 = document.createElement("br")
-var br4 = document.createElement("br")
-var br5 = document.createElement("br")
+var br1 = break_create();
+var br2 = break_create();
+var br3 = break_create();
+var br4 = break_create();
+var br5 = break_create();
 
 var button = document.createElement("button")
 button.setAttribute("type","button")
