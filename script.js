@@ -1,5 +1,5 @@
 function info(){
-    var firstname = document.getElementById("firstname").value
+     var firstname = document.getElementById("firstname").value
     var middlename = document.getElementById("middlename").value
     var lastname = document.getElementById("lastname").value
     var email = document.getElementById("email").value
@@ -11,10 +11,10 @@ function info(){
     middlenameele.innerHTML = `MiddleName:${middlename}`
 
     var lastnameele = document.createElement("p")
-    lastnameele.innerHTML = `MiddleName:${lastname}`
+    lastnameele.innerHTML = `LastName:${lastname}`
 
     var emailele = document.createElement("p")
-    emailele.innerHTML = `MiddleName:${email}`
+    emailele.innerHTML = `email:${email}`
 
     document.body.append(firstnameele,middlenameele,lastnameele,emailele)
 }
