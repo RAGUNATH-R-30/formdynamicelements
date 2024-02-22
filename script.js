@@ -4,7 +4,19 @@ function info(){
     var lastname = document.getElementById("lastname").value
     var email = document.getElementById("email").value
 
-    console.log(`FirstName:${firstname},MiddleName:${middlename},LastName:${lastname},Email:${email}`)
+    var firstnameele = document.createElement("p")
+    firstnameele.innerHTML = `FirstName:${firstname}`
+    
+    var middlenameele = document.createElement("p")
+    middlenameele.innerHTML = `MiddleName:${middlename}`
+
+    var lastnameele = document.createElement("p")
+    lastnameele.innerHTML = `MiddleName:${lastname}`
+
+    var emailele = document.createElement("p")
+    emailele.innerHTML = `MiddleName:${email}`
+
+    document.body.append(firstnameele,middlenameele,lastnameele,emailele)
 }
 function labelcreate(tagname,attrname,attrvalue,content){
 var ele = document.createElement(tagname);
